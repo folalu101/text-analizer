@@ -6,8 +6,12 @@ function wordCounter(text) {
     }
     let wordCount = 0;
     const wordArray = text.split(" ");
-    wordArray.forEach(function(word) {
+    wordArray.forEach(function(element) {
+        // logis to check for number
+        if (!Number(element)){
+
       wordCount++;
+    }
     });
     return wordCount;
   }
