@@ -15,3 +15,16 @@ function wordCounter(text) {
     });
     return wordCount;
   }
+
+  // function to check the number of occurences in a text
+
+  function numberOfOccurrencesInText(word, text) {
+    const wordArray = text.split(" ");
+    let wordCount = 0;
+    wordArray.forEach(function(element) {
+      if (word === element) {
+        wordCount++
+      }
+    });
+    return wordCount;
+  }
