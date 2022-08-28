@@ -25,7 +25,7 @@ function wordCounter(text) {
     const wordArray = text.split(" ");
     let wordCount = 0;
     wordArray.forEach(function(element) {
-      if (word.toLowerCase() === element.toLowerCase()) {
+      if (element.toLowerCase().includes(word.toLowerCase())) {
         wordCount++
       }
     });
